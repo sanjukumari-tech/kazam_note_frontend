@@ -57,5 +57,6 @@ frontend/
 ├── vite.config.js
 └── README.md
 
-
+backend deploy link
+https://kazam-note-backend-hc1z.onrender.com 
 https://kazam-note-frontend-dbih.vercel.app/
