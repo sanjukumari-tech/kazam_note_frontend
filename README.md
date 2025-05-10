@@ -1,29 +1,58 @@
-# .
+# 📝 Real-Time Notes App – Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the **frontend** for the Real-Time Notes App built using:
 
-## Recommended IDE Setup
+✅ **Vue 3**  
+✅ **Pinia**  
+✅ **Axios**  
+✅ **Socket.IO Client**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+It connects to the backend API and WebSocket server to provide a real-time note-taking experience.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 📸 **Preview**
 
-## Project Setup
+| Feature        | Screenshot               |
+|----------------|-------------------------|
+| Notes List      | ![Notes List](screenshots/notes-list.png) |
+| Add New Note    | ![Add Note](screenshots/add-note.png)     |
+| Real-time Sync  | ![Real-time](screenshots/real-time.png)   |
 
-```sh
-npm install
-```
+> _Replace the image paths in `/screenshots/` with your actual images._
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
-```
+## 🏗️ **Tech Stack**
 
-### Compile and Minify for Production
+| Layer       | Tech                      |
+|-------------|--------------------------|
+| Frontend     | Vue 3, Pinia, Axios, Socket.IO Client |
 
-```sh
-npm run build
-```
+---
+
+## ✨ **Features**
+
+✅ Add notes in real-time  
+✅ Auto-sync notes across all clients  
+✅ Clean and simple UI  
+✅ Reactive state management with Pinia  
+✅ Connects to Socket.IO backend for live updates  
+✅ Axios-based API calls to backend REST endpoints
+
+---
+
+## 📂 **Folder Structure**
+
+```bash
+frontend/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── stores/
+│   ├── views/
+│   ├── App.vue
+│   └── main.js
+├── vite.config.js
+└── README.md
