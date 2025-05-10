@@ -15,7 +15,7 @@ It connects to the backend API and WebSocket server to provide a real-time note-
 
 | Feature        | Screenshot               |
 |----------------|-------------------------|
-| Notes List      | ![Notes List](screenshots/notes-list.png) |
+| Notes List      | ![Notes List](./public/Screenshot%202025-05-10%20004205.png) |
 | Add New Note    | ![Add Note](screenshots/add-note.png)     |
 | Real-time Sync  | ![Real-time](screenshots/real-time.png)   |
 
