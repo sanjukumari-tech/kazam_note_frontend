@@ -11,9 +11,7 @@ export const useNoteStore = defineStore('noteStore', {
     async fetchNotes() {
       try {
         const res = await axios.get(import.meta.env.VITE_API_URL +'/api/notes')
-        console.log(res);
         this.notes = res.data.notes
-        console.log("ssss",this.notes[0]);
       } catch (err) {
         console.error('Fetch error:', err)
       }
@@ -21,8 +19,7 @@ export const useNoteStore = defineStore('noteStore', {
     async addNote(noteText) {
       try {
         const res = await axios.post(import.meta.env.VITE_API_URL +'/api/notes', { text: noteText })
-        console.log("addres",res);
-        console.log('Sending note:', noteText);
+      
 
         this.fetchNotes() // refresh notes after adding
       } catch (err) {
@@ -31,8 +28,5 @@ export const useNoteStore = defineStore('noteStore', {
       }
     },
    
-    
-    //   this.socketInitialized = true
-    // }
   }
 })

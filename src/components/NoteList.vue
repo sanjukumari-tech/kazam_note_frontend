@@ -13,7 +13,6 @@
 import { useNoteStore } from '../stores/noteStore'
 
 const store = useNoteStore()
-console.log("store",store);
 </script>
 
 <style scoped>

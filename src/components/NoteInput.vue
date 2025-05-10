@@ -13,12 +13,11 @@ const newNote = ref('')
 const store = useNoteStore()
 
 function handleAdd() {
-console.log("ff",newNote.value);
   if (newNote.value.trim()) {
     store.addNote(newNote.value)
     newNote.value = ''
   }
-  console.log("hello");
+
 }
 </script>
 
