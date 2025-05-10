@@ -56,3 +56,6 @@ frontend/
 │   └── main.js
 ├── vite.config.js
 └── README.md
+
+
+https://kazam-note-frontend-dbih.vercel.app/
