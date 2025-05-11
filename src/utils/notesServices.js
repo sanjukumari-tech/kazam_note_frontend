@@ -1,10 +1,12 @@
 // services/noteService.js
 import axios from 'axios'
 
+const API = import.meta.env.VITE_API_URL;
+
 export async function fetchNotesAPI() {
-  return axios.get(import.meta.env.VITE_API_URL +'/api/notes')
+  return axios.get(`${API}/api/notes`)
 }
 
 export async function addNoteAPI(noteText) {
-  return axios.post(import.meta.env.VITE_API_URL +'/api/notes', { text: noteText })
+  return axios.post(`${API}/api/notes`, { text: noteText })
 }
