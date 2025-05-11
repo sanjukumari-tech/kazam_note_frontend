@@ -7,11 +7,11 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // https://vite.dev/config/
 export default defineConfig({
   server: {
-    proxy: {
-      '/api': {
-        target: 'https://kazam-note-backendk.onrender.com'
-      }
-    }
+    // proxy: {
+    //   '/api': {
+    //     target: 'https://kazam-note-backendk.onrender.com'
+    //   }
+    // }
   },
   plugins: [
     vue(),
