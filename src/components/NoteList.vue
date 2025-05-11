@@ -2,7 +2,7 @@
   <div class="note-list">
     <h3>Notes</h3>
     <div class="notes-container">
-      <div v-for="note in store.notes" :key="note.id" class="note-item">
+      <div v-for="note in notes" :key="note.id" class="note-item">
         {{ note.text }}
       </div>
     </div>
@@ -10,9 +10,12 @@
 </template>
 
 <script setup>
-import { useNoteStore } from '../stores/noteStore'
-
-const store = useNoteStore()
+defineProps({
+  notes: {
+    type: Array,
+    default: () => []
+  }
+})
 </script>
 
 <style scoped>

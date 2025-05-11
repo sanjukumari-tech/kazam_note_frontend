@@ -1,23 +1,21 @@
 <template>
   <div class="input-container">
-    <input v-model="newNote" placeholder="New Note..." />
-    <button @click="handleAdd">Add</button>
+    <input v-model="noteText" placeholder="New Note..." />
+    <button @click="emitNote">Add</button>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { useNoteStore } from '../stores/noteStore'
+const emit = defineEmits(['add'])
 
-const newNote = ref('')
-const store = useNoteStore()
+const noteText = ref('')
 
-function handleAdd() {
-  if (newNote.value.trim()) {
-    store.addNote(newNote.value)
-    newNote.value = ''
+function emitNote() {
+  if (noteText.value.trim()) {
+    emit('add', noteText.value)
+    noteText.value = ''
   }
-
 }
 </script>
 
