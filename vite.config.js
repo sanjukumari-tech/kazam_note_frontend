@@ -9,9 +9,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://kazam-note-backendk.onrender.com',
-        changeOrigin: true,
-
+        target: 'https://kazam-note-backendk.onrender.com'
       }
     }
   },
