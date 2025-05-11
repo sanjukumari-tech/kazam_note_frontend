@@ -6,7 +6,7 @@ let socket;
 export const initSocket = () => {
   if (!socket) {
     socket = io('https://kazam-note-backendk.onrender.com', {
-      withCredentials: true,
+      // withCredentials: true,
     });
 
     socket.on('connect', () => {
