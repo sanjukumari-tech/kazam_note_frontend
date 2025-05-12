@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref,watch } from 'vue'
 import Toast from '../common/Toast.vue' 
 
 const emit = defineEmits(['add'])
@@ -20,6 +20,12 @@ const emit = defineEmits(['add'])
 const noteText = ref('')
 const showError = ref(false)
 const toastMessage = ref('')
+
+watch(noteText, (newVal) => {
+  if (newVal.trim()) {
+    showError.value = false
+  }
+})
 
 function addNote() {
   if (noteText.value.trim()) {
