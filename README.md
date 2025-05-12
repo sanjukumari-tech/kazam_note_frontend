@@ -16,7 +16,8 @@ It connects to the backend API and WebSocket server to provide a real-time note-
 | Feature        | Screenshot               |
 |----------------|-------------------------|
 | Notes List      | ![Notes List](./public/Screenshot%202025-05-10%20004205.png) |
-| Add New Note    | ![Add Note](screenshots/add-note.png)     |
+| Form Validation     | ![Notes List](./public//Screenshot%202025-05-12%20094728.png) |
+| Add New Note    | ![Add Note](./public/Screenshot%202025-05-12%20100022.png)     |
 | Real-time Sync  | ![Real-time](screenshots/real-time.png)   |
 
 > _Replace the image paths in `/screenshots/` with your actual images._
