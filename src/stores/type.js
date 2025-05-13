@@ -1,3 +1,3 @@
-// stores/noteStore/types.js
-export const FETCH_NOTES = 'FETCH_NOTES'
-export const ADD_NOTE = 'ADD_NOTE'
+// // stores/noteStore/types.js
+// export const FETCH_NOTES = 'FETCH_NOTES'
+// export const ADD_NOTE = 'ADD_NOTE'

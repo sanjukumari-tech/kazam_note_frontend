@@ -3,7 +3,7 @@
     <h3>Notes</h3>
     <div class="notes-container">
       <div v-for="note in notes" :key="note.id" class="note-item">
-        {{ note.text }}
+        {{ note }}
       </div>
     </div>
   </div>
