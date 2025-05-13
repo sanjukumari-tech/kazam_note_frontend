@@ -17,7 +17,7 @@ export const actions = {
   async addNote(noteText) {
     try {
       const res = await addNoteAPI(noteText)
-      if (res.data.notes) this.notes = res.data.notes
+      if (res.data.notes) this.notes = res.data.notes;
       return { success: true, data: res.data }
     } catch (err) {
       console.error('Add error:', err)
