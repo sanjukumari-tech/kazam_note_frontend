@@ -7,7 +7,9 @@ const API = import.meta.env.VITE_API_URL;
 export const initSocket = () => {
   if (!socket) {
     socket = io(API, {
-      transports:socket,
+      transports: ['websocket'], // Force WebSocket only
+upgrade: false,             // Prevent fallback to polling
+
       withCredentials: true,
     });
 
